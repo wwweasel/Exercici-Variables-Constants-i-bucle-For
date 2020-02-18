@@ -16,12 +16,15 @@ public class Fase3 {
 		birthday = birthday_input.nextInt();
 		boolean isLeapYear;
 		
+		String phrase_true = "Your birthday is a leap year!"; 
+		String phrase_false = "Your birthday is not a leap year!"; 
+		
 		if( birthday % 4 == 0 && (birthday % 100 != 0 || birthday % 400 == 0) ) {
 			isLeapYear = true;
-			System.out.println(isLeapYear);
+			System.out.println(phrase_true);
 		}else {
 			isLeapYear = false;
-			System.out.println(isLeapYear);
+			System.out.println(phrase_false);
 		}
 
 	}
